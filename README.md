@@ -4,59 +4,82 @@ Turn hand drawings into realistic AI-generated images and videos.
 
 ## Overview
 
-**Drawing to AI** is a web app that lets users upload a hand-drawn sketch and transform it into a more polished, realistic output using AI.  
-From a simple drawing, users can:
+**Drawing to AI** is a web application that transforms simple hand-drawn sketches into realistic AI-generated visuals. Users can upload drawings, edit them, and generate realistic images or videos directly inside the app.
 
-- upload a sketch
-- edit the uploaded image
-- generate a realistic image
-- generate a video version
-- preview the result in the app
+The project uses **Qubrid AI APIs** for AI-powered generation workflows, leveraging:
 
-This project is designed to make sketch-to-AI creation simple, interactive, and visually intuitive.
+- **Qwen Image Edit 2.0** for realistic image generation and editing
+- **P-Video** model for AI video generation
+
+The goal of this project is to make AI-powered creativity simple, interactive, and accessible.
+
+---
 
 ## Features
 
-- **Upload Hand Drawing**  
-  Upload a sketch or hand-drawn image from your device.
+- Upload hand-drawn sketches
+- Edit uploaded images
+- Generate realistic AI images
+- Generate AI videos
+- Real-time preview interface
+- Clean and minimal UI
+- Powered by Qubrid AI APIs
 
-- **Edit Image**  
-  Open the uploaded drawing for editing before generation.
+---
 
-- **Generate Image**  
-  Convert the drawing into a realistic AI-generated image.
+## AI Models Used
 
-- **Generate Video**  
-  Create an AI-generated video based on the drawing.
+### Qwen Image Edit 2.0
+Used for transforming hand-drawn sketches into realistic AI-generated images while preserving the original structure of the drawing.
 
-- **Live Preview Panel**  
-  View the generated result directly inside the app.
+### P-Video
+Used for generating AI-powered videos from uploaded sketches and generated outputs.
+
+### API Provider
+This project uses **Qubrid AI API keys** and infrastructure for model inference and generation.
+
+---
 
 ## Screenshots
 
-### Main Interface
-![Drawing to AI UI](./image.png)
+### Before Generation
+Upload a hand-drawn sketch into the application.
 
-> Replace `./image.png` with the correct screenshot file path in your repository if needed.
+![Before Generation](./img_cookbook.png)
+
+### After Generation
+AI transforms the drawing into a realistic image.
+
+![After Generation](./image_gen.png)
+
+---
 
 ## How It Works
 
-1. Upload a hand drawing.
-2. Optionally edit the image.
-3. Click **Generate Image** or **Generate Video**.
-4. View the AI-generated result in the preview panel.
+1. Upload a drawing or sketch
+2. Edit the image if needed
+3. Click **Generate Image** or **Generate Video**
+4. AI processes the input using Qubrid APIs
+5. View the generated result instantly
 
-## Getting Started
+---
 
-### Prerequisites
+## Tech Stack
 
-- Node.js installed
-- npm, yarn, or pnpm
-- AI generation backend or API configured
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- Qubrid AI APIs
+- Qwen Image Edit 2.0
+- P-Video Model
 
-### Installation
+---
+
+## Installation
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/sharur7/drawing-ai.git
 cd drawing-ai
-npm install
